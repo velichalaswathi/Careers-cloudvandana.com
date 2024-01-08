@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Survey Form</title>
+    <style>
+        body {
+            background-color: blue;
+
+        }
+        .form-container {
+            background-color: white;
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .submit-button {
+            background-color: blue;
+            color: white;
+        }
+        .footer {
+            background-color: blue;
+            color: paleyellow;
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+	h2{
+	   text-align:center;
+	   color: white;
+	}
+    </style>
+</head>
+<body>
+     <h2 >Customer Survey Form</h2>
+    <div class="form-container">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label>Is this your first time using our products & services?</label><br>
+            <input type="radio" id="first-time-yes" name="first-time" value="Yes" required>
+            <label for="first-time-yes">Yes</label>
+            <input type="radio" id="first-time-no" name="first-time" value="No">
+            <label for="first-time-no">No</label><br><br>
+
+            <label>Would you recommend us to your friends or colleagues?</label><br>
+            <input type="radio" id="recommend-yes" name="recommend" value="Yes" required>
+            <label for="recommend-yes">Yes</label>
+            <input type="radio" id="recommend-no" name="recommend" value="No">
+            <label for="recommend-no">No</label><br><br>
+
+            <label>How satisfied are you with our company overall?</label><br>
+            <input type="radio" id="satisfaction-satisfied" name="satisfaction" value="Satisfied" required>
+            <label for="satisfaction-satisfied">Satisfied</label>
+            <input type="radio" id="satisfaction-undecided" name="satisfaction" value="Undecided">
+            <label for="satisfaction-undecided">Undecided</label>
+            <input type="radio" id="satisfaction-unsatisfied" name="satisfaction" value="Unsatisfied">
+            <label for="satisfaction-unsatisfied">Unsatisfied</label><br><br>
+
+            <label for="suggestions">Do you have suggestions to improve our service?</label><br>
+            <textarea id="suggestions" name="suggestions" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Submit" class="submit-button">
+        </form>
+    </div>
+
+    <div class="footer">
+        &copy; 2018 Customer Survey Form. All Rights Reserved | Design by <b style="color:navy">W3Layouts</b>
+    </div>
+</body>
+</html>
